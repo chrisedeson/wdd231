@@ -1,0 +1,294 @@
+:root {
+    --primary-color: #065143;
+    --nav-color: #0A122A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Sansita", sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: "Protest Guerrilla", system-ui;
+    font-size: .80rem;
+    padding-bottom: 15px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 50px;
+    padding: 10px 10px 0 10px;
+}
+
+header h1 {
+    padding-top: 30px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+header, .hamburger-btn, .modal-close {
+    background-color: var(--primary-color);
+}
+
+.hamburger-btn {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.modal-close {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 1.6rem;
+    border: none;
+    margin: 4px;
+    padding: 0;
+    color: red;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.location-panel img {
+    width: 200px;
+    padding-top: 15px;
+}
+
+.location-panel p {
+    padding-top: 5px;
+}
+
+.location-panel {
+    text-align: center;
+}
+
+main {
+    padding: 15px 15px 0 15px;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+ul a:hover {
+    transition: 1s;
+    color: yellow;
+    border: 1px solid white;       
+}
+
+section {
+    padding-bottom: 25px;
+}
+
+section ul {
+    margin: 20px 30px 0 30px;
+}
+
+section h2 {
+    background-color: #497451;
+    text-align: center;
+    font-size: larger;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+}
+
+.courses-navigation button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2px 0;
+    border-radius: 5px;
+}
+
+.courses-navigation {
+    display: flex;
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    margin: 0 2px;
+    border-bottom: 1px solid gray;
+    justify-content: center;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 13px;
+    margin: 20px 5px;
+}
+
+.courses button {
+    padding: 10px;
+    font-weight: 800;
+    background-color: #d9e7f3;
+    color: black;
+    border-radius: 5px;
+
+}
+
+.course-certificate-panel {
+    padding-bottom: 10px;
+}
+
+footer img {
+    width: 40px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+}
+
+#lastModified {
+    padding-top: 15px;
+    color: gold;
+}
+
+nav a.active {
+    padding: 10px;
+    background-color: var(--nav-color);
+}
+
+.credits-required {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: yellow;
+}
+
+nav ul.open, .modal-close.show {
+    display: block;
+}
+
+.hamburger-btn.hide {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: clamp(2rem, 3vw, 5rem);
+
+    }
+
+    header img {
+        padding-left: 30px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    main h2 {
+        border-radius: 5px 5px 0 0;
+
+    }
+
+    .course-work-panel, .location-panel, .course-certificate-panel {
+        border-radius: 5px;
+    }
+
+    .location-panel, .course-work-panel {
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    }
+
+    .location-panel img {
+        padding: 20px 25px;
+        min-width: 200px;
+        width: 70%;
+    }
+
+    .course-certificate-panel {
+        grid-column: 1 / -1;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .hamburger-btn, .modal-close {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content:  space-around;
+        background-color: black;
+        text-decoration: none;
+        /* padding: 10px; */
+        align-items: center;
+
+    }
+
+    ul a {
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    ul a:hover {
+        transition: 1s;
+        color: yellow;   
+        border: none;
+   
+    }
+
+
+    .courses-navigation button {
+        max-width: 20%;
+    }
+
+    .courses {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer p, .country {
+        display: inline-flex;
+    }
+    
+    #lastModified {
+        display: block;
+    }
+
+
+
+}

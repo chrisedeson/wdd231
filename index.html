@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A course homepage">
+    <meta name="author" content="Christopher Edeson">
+    <title>Course Homepage - Christopher Edeson</title>
+    <link rel="stylesheet" href="styles/homepage.css">
+    <script src="scripts/homepage.js" type="module"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/profile-picture-serious.jpg" alt="Profile picture of Christopher Edeson standing and smiling">
+        <h1>Christopher E. Edeson</h1>
+        <button class="hamburger-btn">
+            <i class="fa-solid fa-bars" data-open="navOpenBtn"></i>
+        </button>
+        <button hidden class="modal-close">
+            <i class="fa-solid fa-rectangle-xmark" data-close="navCloseBtn"></i>
+        </button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="active" id="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Github Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/christopher-edeson" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="course-work-panel">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="location-panel">
+            <h2>Lagos, Nigeria</h2>
+            <img src="images/national-theatre.jpg" alt="Exterior view of the National Theatre in Lagos, featuring its iconic helmet-shaped design against a clear blue sky.">
+            <p>National Theatre</p>
+        </section>
+        <section class="course-certificate-panel">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="courses-navigation">
+                <button id="all" data-subject="ALL">All</button>
+                <button id="cse" data-subject="CSE">CSE</button>
+                <button id="wdd" data-subject="WDD">WDD</button>
+            </div>
+            <p class="credits-required">Credits Required: 30</p>
+            <div class="courses">
+                <!-- <button>CSE 110</button>
+                <button>WDD 130</button>
+                <button>CSE 111</button>
+                <button>CSE 210</button>
+                <button>WDD 131</button>
+                <button>WDD 231</button> -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span></p>
+        <p>✈️ Christopher Effiong Edeson ✈️</p>
+        <div class="country">
+            <p class="test">Nigeria</p>
+            <img src="images/nigeria-flag-icon.svg" alt="Nigerian flag icon">
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+
+</html>
