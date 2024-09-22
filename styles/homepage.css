@@ -12,6 +12,10 @@ body {
     font-family: "Sansita", sans-serif;
 }
 
+header, .hamburger-btn, .modal-close {
+    background-color: var(--primary-color);
+}
+
 header {
     position: relative;
     display: flex;
@@ -23,7 +27,7 @@ header {
 }
 
 header img {
-    width: 50px;
+    width: 60px;
     padding: 10px 10px 0 10px;
 }
 
@@ -33,8 +37,42 @@ header h1 {
     letter-spacing: 1px;
 }
 
-header, .hamburger-btn, .modal-close {
-    background-color: var(--primary-color);
+
+main {
+    padding: 15px 15px 0 15px;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+nav a.active {
+    padding: 10px;
+    background-color: var(--nav-color);
+}
+
+nav ul.open, .modal-close.show {
+    display: block;
+}
+
+.hamburger-btn.hide {
+    display: none;
+}
+
+ul a:hover {
+    transition: 1s;
+    color: yellow;
+    border: 1px solid white;       
 }
 
 .hamburger-btn {
@@ -73,30 +111,6 @@ header, .hamburger-btn, .modal-close {
 
 .location-panel {
     text-align: center;
-}
-
-main {
-    padding: 15px 15px 0 15px;
-}
-
-nav ul {
-    display: none;
-}
-
-nav ul a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 10px;
-}
-
-ul a:hover {
-    transition: 1s;
-    color: yellow;
-    border: 1px solid white;       
 }
 
 section {
@@ -154,8 +168,12 @@ section h2 {
     padding-bottom: 10px;
 }
 
-footer img {
-    width: 40px;
+.credits-required {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: yellow;
 }
 
 footer {
@@ -163,6 +181,10 @@ footer {
     text-align: center;
     color: white;
     padding: 20px;
+}
+
+footer img {
+    width: 40px;
 }
 
 .country {
@@ -178,26 +200,6 @@ footer {
     color: gold;
 }
 
-nav a.active {
-    padding: 10px;
-    background-color: var(--nav-color);
-}
-
-.credits-required {
-    border: 1px solid black;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 20px;
-    background-color: yellow;
-}
-
-nav ul.open, .modal-close.show {
-    display: block;
-}
-
-.hamburger-btn.hide {
-    display: none;
-}
 
 @media only screen and (min-width: 600px) {
     header {
@@ -288,7 +290,6 @@ nav ul.open, .modal-close.show {
     #lastModified {
         display: block;
     }
-
 
 
 }
