@@ -23,7 +23,7 @@ h2 {
     font-size: 2rem;
     background: none;
     border: 1px solid #015a3c;
-    padding: 0 15px;
+    padding: 3px 15px;
     cursor: pointer;
     margin: 20px 10px 0 10px;
 }
@@ -97,6 +97,7 @@ main .display-list {
 
 .display-list section h3 {
     display: block;
+    font-family: "Montserrat", sans-serif;
 }
 
 .display-list section > * {
