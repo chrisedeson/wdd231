@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 88px;
+    align-items: end;
+    padding-left: 10px;
+    background-color: #FFD6BA;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+header p {
+    font-family: "Pirata One", system-ui;
+}
+
+
+nav {
+    background-color: #555B6E;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+#hamburgerButton::before {
+    content: "\2630";
+}
+
+#hamburgerButton, .nav-buttons #themes {
+    font-size: 2rem;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+ul.menu-links li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: white;
+    text-decoration: none;
+    /* background: red; */
+}
+
+ul.menu-links {
+    /* display: none; */
+    list-style-type: none;
+}
+
+.active {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#hamburgerButton.open::before {
+    content: "X";
+}
+
+/* ul.menu-links.open {
+    display: block;
+} */
+
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+
+@media only screen and (min-width: 38rem) {
+    #hamburgerButton {
+        display: none;
+    }
+
+    ul.menu-links, ul.menu-links.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menu-links a:hover {
+        color: orange;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+}

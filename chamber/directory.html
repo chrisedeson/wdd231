@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The directory page for the Chamber of Commerce website">
+    <meta name="author" content="Christopher Edeson">
+    <title>Chamber of Commerce - Directory Page</title>
+    <link rel="stylesheet" href="../../wdd231/styles/normalize.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="scripts/header.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+     
+    <!-- Socail Media tags -->
+    <meta property="og:title" content="Chamber of Commerce - Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="http://www.oyibosonline.com/wp-content/uploads/2019/03/lagos-768x432.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pirata+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" width="34" height="40" alt="Imbuktu Logo">
+        <div class="title">
+            <h1>Oshodi</h1>
+            <p>Chamber of Commerce</p>    
+        </div> 
+        <div class="nav-buttons">
+            <button id="themes">&#9775;</button>
+            <button id="hamburgerButton"><!-- &#9776; --></button>
+        </div>
+    </header>
+    <nav id="nav-links-animation">              
+        <ul class="menu-links">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <h2>Business Directory</h2>
+    <main>
+        <div class="layout-btns">
+            <button class="grid-btn active">&#119584;</button>
+            <button class="list-btn">&#128462;</button>
+        </div>
+        <div id="cards" class="cards"></div>
+    </main>
+    <footer>
+        <div class="website-address">
+            <p class="footer-heading-text"><strong>Oshodi Chamber of Commerce</strong></p>
+            <p>10 Rue De La Paix</p>
+            <p>Oshodi, Mali 999</p>
+            <p>info@Oshodicc.org</p> 
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="social-media-icons">
+            <a href="https://www.youtube.com/" target="_blank" class="icon-button">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" class="icon-button">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christopher-edeson/" target="_blank" class="icon-button">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com/christopher.edeson" target="_blank" class="icon-button">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+        </div>        
+        <div class="copyright-info">
+            <p>WDD231 Class Project</p>
+            <p>Christopher Edeson</p>
+            <p>&copy; <span id="currentYear"></span> Oshodi Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

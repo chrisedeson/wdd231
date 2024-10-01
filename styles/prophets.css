@@ -1,0 +1,40 @@
+body {
+    font-size: 16px;
+    text-align: center;
+    background-color: whitesmoke;
+    
+}
+main {
+    background-color: rgb(216, 197, 241)
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+section {
+    background-color: lightsteelblue;
+    margin: 20px;
+    padding-bottom: 10px;
+    border: 2px solid rgb(143, 82, 143);
+}
+
+h1, h2 {
+    /* font-family:'Courier New', Courier, monospace; */
+    font-family: "Merriweather Sans", sans-serif;
+    color: darkviolet;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+img {
+    box-shadow: 0 0 30px black;
+    width: 100%;
+    max-width: 200px;
+    height: 250px; 
+    cursor: pointer;
+}

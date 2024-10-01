@@ -1,0 +1,73 @@
+footer {
+    margin-top: 20px;
+    background-color: #FFD6BA;
+    padding: 0 10px;
+}
+
+footer .footer-heading-text {
+    font-family: "Pirata One", system-ui;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.icon-button {
+    background: gray;
+    border: 1px solid gray;
+    border-radius: 50%; /* Circular button */
+    width: 60px;
+    height: 60px;
+    display: flex; /* Flex for centering the icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-decoration: none; /* Remove underline */
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    background: darkgray; /* Change background color on hover */
+}
+
+#lastModified {
+    padding-top: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #2B50AA;
+}
+
+
+
+@media only screen and (min-width: 38rem) {
+    .footer {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    .website-address {
+        padding: 20px;
+    }
+    
+    .social-media-icons {
+        justify-content: center; /* Center the icons */
+        padding: 10px 0; /* Padding for spacing */
+    }
+    
+    .social-media-icons a {
+        margin: 0 10px; /* Spacing between icons */
+    }
+    
+    .copyright-info {
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid gray;
+    }
+    
+
+    
+}

@@ -1,0 +1,28 @@
+{
+    "familyName": "Edeson Effiong",
+    "familyMoveDate": "25th December, 2001",
+    "familyPeopleNumber": 4,
+    "isVisited": true,
+    "individuals": [
+        {
+            "name": "Christopher",
+            "age": 22,
+            "gender": "male"
+        },
+        {
+            "name": "Miriam",
+            "age": 27,
+            "gender": "female"
+        },
+        {
+            "name": "Imoh",
+            "age": 31,
+            "gender": "male"
+        },
+        {
+            "name": "Aniekan",
+            "age": 33,
+            "gender": "male"
+        }
+    ]
+ }
