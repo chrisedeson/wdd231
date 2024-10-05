@@ -17,8 +17,8 @@ footer .footer-heading-text {
 }
 
 .icon-button {
-    background: gray;
-    border: 1px solid gray;
+    background: #555B6E;
+    border: 1px solid #555B6E;
     border-radius: 50%; /* Circular button */
     width: 60px;
     height: 60px;
@@ -65,7 +65,7 @@ footer .footer-heading-text {
     .copyright-info {
         padding: 10px;
         text-align: center;
-        border-top: 1px solid gray;
+        border-top: 1px solid #555B6E;
     }
     
 

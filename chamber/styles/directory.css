@@ -105,7 +105,7 @@ main .display-list {
 }
 
 .display-list section:nth-child(even) {
-    background-color: #b9c5b5;
+    background-color: #0ed1d1;
 }
 
 .actives {
