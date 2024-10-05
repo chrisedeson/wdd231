@@ -27,25 +27,35 @@ function toggleNavigation(isOpen) {
 hamburgerBtn.addEventListener("click", () => toggleNavigation(true));
 modalCloseBtn.addEventListener("click", () => toggleNavigation(false));
 
-// Function to render courses based on subject
+// Function to render courses based on subject and calculate credits
 function renderCourses(subject) {
     coursesDiv.innerHTML = "";
+    
+    // Filter courses by subject if provided
     const filteredCourses = subject ? courses.filter(course => course.subject === subject) : courses;
+    
+    // Render each filtered course as a button
     filteredCourses.forEach(course => {
         const newButton = document.createElement('button');
         newButton.textContent = `${course.subject} ${course.number}`;
         if (course.completed) newButton.style.backgroundColor = "#808E49";
         coursesDiv.appendChild(newButton);
     });
+
+    // Calculate and display the total credits for filtered courses
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    amountCredits.innerHTML = `Credits Required: ${totalCredits}`;
 }
+
+// Initial render of all courses and total credits
+renderCourses();
+
 
 // Event listeners for course filters
 allCourseBtn.addEventListener("click", () => renderCourses());
 cseCourseBtn.addEventListener("click", () => renderCourses("CSE"));
 wddCourseBtn.addEventListener("click", () => renderCourses("WDD"));
 
-// Initial render of all courses
-renderCourses();
 
 // Calculate and display total credits required
 const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
