@@ -119,6 +119,12 @@ main {
     margin: 10px 0;
 }
 
+.middle-section,
+.heading-home,
+.business-section {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 .events-section {
     margin-bottom: 20px;
@@ -270,6 +276,10 @@ main {
 
 /* Media Queries for Responsive Design */
 @media only screen and (min-width: 38rem) { /* For larger screens */
+    main {
+        margin: 0 10vw;
+    }
+
     /* Hero */
     .hero .call-action {
         top: 50%; /* Center vertically */
@@ -288,16 +298,7 @@ main {
         margin-left: 0; /* Remove any left margin */
     }
 
-    main {
-        margin: 0 10vw;
-    }
-
-    .middle-section,
-    .heading-home,
-    .business-section {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
+    
 
     .middle-section h3 {
         text-align: left;
