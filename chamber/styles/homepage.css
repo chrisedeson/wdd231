@@ -1,7 +1,7 @@
 body {
     /* overflow-x: hidden; Prevent horizontal scrolling */
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -19,12 +19,12 @@ main {
 
 .hero video {
     position: relative;
-    top: 50%; /* Center the video vertically */
-    left: 50%; /* Center the video horizontally */
-    min-width: 100%; /* Ensure the video covers the full width */
-    min-height: 100%; /* Ensure the video covers the full height */
-    width: auto; /* Allow width to adjust */
-    height: auto; /* Allow height to adjust */
+    top: 50%;
+    left: 50%;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
     object-fit: cover; /* Maintain aspect ratio and cover the area */
     z-index: -1; /* Send the video behind the content */
     transform: translate(-50%, -50%); /* Center the video */
@@ -57,17 +57,17 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Adjust color and opacity as needed */
-    backdrop-filter: blur(10px); /* Adjust blur amount as needed */
-    border-radius: 5px; /* Match border-radius to h3 padding if desired */
-    z-index: -1; /* Sends the blur behind the h3 content */
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    z-index: -1;
 }
 
 .call-action-btns {
-    display: flex; /* Use flexbox for button alignment */
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: flex-start; /* Align buttons to the left */
-    margin-top: 10px; /* Margin above buttons */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
 }
 
 .call-action-btns button {
