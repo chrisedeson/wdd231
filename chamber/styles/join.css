@@ -33,7 +33,7 @@ input {
 input[name="firstName"],
 input[name="lastName"],
 input[name="email"],
-input[name="organisation"] {
+input[name="organization"] {
     border-left: 3px solid red;
 
 }
