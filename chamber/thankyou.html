@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Christopher Edeson">
-    <meta name="description" content="Homepage - Oshodi Chamber of Commerce">
-    <title>Oshodi Chamber of Commerce</title>
+    <meta name="description" content="Thank you page - Oshodi Chamber of Commerce">
+    <title>Thank you! - Oshodi Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
     <link rel="stylesheet" href="styles/footer.css">
     <script src="scripts/header.js" defer></script>
-    <script src="scripts/homepage.js" type="module"></script>
+    <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/footer.js" defer></script>
 
     <!-- Favicon -->
@@ -20,9 +18,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
     <!-- Socail Media tags -->
-    <meta property="og:title" content="Homepage - Oshodi Chamber of Commerce">
+    <meta property="og:title" content="Thank you! - Oshodi Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chrisedeson.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://chrisedeson.github.io/wdd231/chamber/thankyou.html">
     <meta property="og:image" content="https://chrisedeson.github.io/wdd231/chamber/images/lagos.jpg">
 
     <!-- Google Fonts -->
@@ -42,61 +40,25 @@
         </div> 
         <div class="nav-buttons">
             <button id="themes">&#9775;</button>
-            <button id="hamburgerButton"></button>
+            <!-- <button id="hamburgerButton"></button> -->
         </div>
     </header>
-    <nav id="nav-links-animation">              
-        <ul class="menu-links">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="#">Discover</a></li>
-        </ul>
-    </nav>
+
     <main>
-        <section class="hero">
-            <video autoplay muted loop playsinline>
-                <source src="images/hero-video.mp4" type="video/mp4">
-                <source src="images/hero.jpg" type="image/jpeg">
-                Your browser does not support the video tag
-            </video>
-            <!-- Fallback Image for Non-Supporting Browsers -->
-             <!-- <img src="images/hero.jpg" alt="Background Image" class="fallback=image"> -->
-
-            <div class="call-action animate">
-                <h3>. . . the leading voice of the organized private sector</h3>
-                <div class="call-action-btns">
-                    <button>Keynote Tickets</button>
-                    <button class="about-us-btn">What We Do</button>
-                </div>
-            </div>
+        <h2>Thank You for Signing Up!</h2>
+        <p>We appreciate you taking the time to fill out the form. Below is the information you submitted:</p>
+        
+        <section class="submitted-info">
+            <h3>Submitted Information</h3>
+            <p><strong>First Name: </strong> <span id="firstName"></span></p>
+            <p><strong>Last Name: </strong> <span id="lastName"></span></p>
+            <p><strong>Email: </strong> <span id="email"></span></p>
+            <p><strong>Mobile Number: </strong> <span id="mobile"></span></p>
+            <p><strong>Business/Organization Name: </strong> <span id="organisation"></span></p>
+            <p><strong>Submission Date & Time: </strong> <span id="timestamp"></span></p>
         </section>
-        <h2 class="heading-home">Home</h2>
-        <section class="middle-section">
-            <div class="events-section">
-                <h3>Events</h3>
-            </div>
-            <div class="weather-section">
-                <div class="current-weather-panel">
-                    <h3>Current Weather</h3>
-                    <div class="current-weather-details">
-
-                    </div>
-                </div>
-                <div class="weather-forecast-panel">
-                    <h3>Weather Forecast</h3>
-                    <div class="weather-forecast-details">
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="business-section">
-            <h3 hidden>Invisible Header</h3> <!-- put here because of errors, i'm lazy yes😒-->
-            
-            
-        </section>
-
+        
+        <button><a href="index.html">Back to Home</a></button>
     </main>
     <footer>
         <div class="website-address">
@@ -127,6 +89,7 @@
             <p id="lastModified"></p>
         </div>
     </footer>
+
 
 </body>
 </html>

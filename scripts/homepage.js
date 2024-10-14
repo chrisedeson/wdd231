@@ -10,6 +10,8 @@ const wddCourseBtn = document.querySelector("#wdd");
 const amountCredits = document.querySelector('.credits-required');
 const lastModifiedSpan = document.getElementById("lastModified");
 
+const courseDetails = document.getElementById("course-details")
+
 // Display current year and last modified date
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 lastModifiedSpan.textContent += ` Last Update: ${document.lastModified}`;
@@ -40,11 +42,19 @@ function renderCourses(subject) {
         newButton.textContent = `${course.subject} ${course.number}`;
         if (course.completed) newButton.style.backgroundColor = "#808E49";
         coursesDiv.appendChild(newButton);
+
+
+        coursesDiv.addEventListener('click', () => {
+            displayCourseDetails(course)
+        });
     });
 
     // Calculate and display the total credits for filtered courses
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     amountCredits.innerHTML = `Credits Required: ${totalCredits}`;
+
+    
+    
 }
 
 // Initial render of all courses and total credits
@@ -68,6 +78,25 @@ function setActiveLink(activeLink) {
     document.querySelectorAll("nav a").forEach(link => link.classList.remove("active"));
     activeLink.classList.add("active");
 }
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technogies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal()
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
 
 // Add event listeners for all navigation links
 document.querySelectorAll("nav a").forEach(link => {

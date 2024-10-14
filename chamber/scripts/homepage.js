@@ -3,7 +3,8 @@ import { getCompanyData } from "./dataFetcher.mjs";
 // Select elements
 const currentWeatherDiv = document.querySelector(".current-weather-details");
 const weatherForecastDiv = document.querySelector(".weather-forecast-details");
-const businessSectionDiv = document.querySelector(".business-section")
+const businessSectionDiv = document.querySelector(".business-section");
+const callActionButtons = document.querySelector(".call-action-btns"); // Select the call-to-action buttons
 
 // API configuration
 const apiKey = "2ef9dd2b8e82a5914c0fce140f9bed2a";
@@ -26,14 +27,13 @@ async function fetchApi(url, renderFunction) {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.error(error);
+        console.error('Fetch Error:', error);
     }
 }
 
 // Fetch current weather and forecast data
 fetchApi(currentWeatherUrl, renderCurrentWeather);
 fetchApi(weatherForecastUrl, data => renderWeatherForecast(getThreeDayForecast(data)));
-
 
 // Render current weather details
 function renderCurrentWeather(data) {
@@ -103,8 +103,6 @@ function getThreeDayForecast(data) {
     return dailyTemperatures.slice(0, 3); // Return only the first three unique days
 }
 
-
-
 const displayCompanies = (data) => {
     // Clear the section before displaying new companies
     businessSectionDiv.innerHTML = '';
@@ -133,9 +131,6 @@ const displayCompanies = (data) => {
     });
 };
 
-
-
-
 // Function to determine the membership tag based on membership level
 const getMembershipTag = (membershipLevel) => {
     if (membershipLevel === 3) {
@@ -161,8 +156,14 @@ const getSpotlightCompanies = (data) => {
     return selectedCompanies;
 };
 
-
+// Load companies data
 getCompanyData((data) => {
     const spotlightCompanies = getSpotlightCompanies(data);
     displayCompanies(spotlightCompanies);
+});
+
+// Show call-to-action buttons after the video has fully loaded
+const heroVideo = document.querySelector(".hero video");
+heroVideo.addEventListener("loadeddata", () => {
+    callActionButtons.style.display = "block"; // Show buttons after video has loaded
 });

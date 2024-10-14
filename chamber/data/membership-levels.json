@@ -1,0 +1,35 @@
+{
+"np": {
+      "title": "Non Profit Membership Benefits",
+      "benefits": [
+        "Access to non-profit events",
+        "Discounts on select events",
+        "Limited advertising opportunities"
+      ]
+    },
+    "bronze": {
+      "title": "Bronze Membership Benefits",
+      "benefits": [
+        "Access to all events",
+        "Training sessions",
+        "Basic advertising on the home page"
+      ]
+    },
+    "silver": {
+      "title": "Silver Membership Benefits",
+      "benefits": [
+        "All Bronze benefits",
+        "Access to special events",
+        "Increased advertising exposure"
+      ]
+    },
+    "gold": {
+      "title": "Gold Membership Benefits",
+      "benefits": [
+        "All Silver benefits",
+        "Premium event access",
+        "Exclusive training opportunities",
+        "Spotlight advertising on the home page"
+      ]
+    }
+  }

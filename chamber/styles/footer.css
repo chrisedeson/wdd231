@@ -1,7 +1,7 @@
 footer {
     margin-top: 20px;
     background-color: #FFD6BA;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 footer .footer-heading-text {
@@ -50,7 +50,7 @@ footer .footer-heading-text {
     }
     
     .website-address {
-        padding: 20px;
+        padding: 10px;
     }
     
     .social-media-icons {

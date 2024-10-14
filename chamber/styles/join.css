@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: "Montserrat", sans-serif;
+    margin: 10px;
+}
+
+main h2 {
+    margin: 0 -5px 25px;
+}
+
+
+h3 {
+    margin: 20px 0 20px 15px;
+    color: #503eca;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.heading-label {
+    margin: 10px 0;
+}
+
+input[name="firstName"],
+input[name="lastName"],
+input[name="email"],
+input[name="organisation"] {
+    border-left: 3px solid red;
+
+}
+
+input[name="title"],
+input[name="mobile"] {
+    border-left: 3px solid #11122B;
+}
+
+
+.heading-label {
+    font-weight: bold;
+    color: #dd3c3c;
+    margin-bottom: 10px;
+}
+
+/* Ensures each label is on its own line */
+fieldset label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Ensure radio buttons are inline with their labels */
+fieldset label input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: center;
+    width: auto;
+}
+
+/* Optional: Style adjustments for the fieldset and legend */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 0 0 0 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-family: "Roboto Condensed", sans-serif;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border: 3px solid #ce3542;
+}
+
+form textarea {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    border-radius: 5px;
+    border: 3px solid #11122B;
+    padding: 1rem;
+    transition: all 0.3s;
+    resize: vertical;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+form textarea:focus {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    border: 3px solid #ce3542;
+}
+
+
+/* Membership Levels Section */
+.levels .level {
+    text-align: center;
+    border-radius: 5px 20px;
+    padding: 15px;
+    background-color: #a49bdb;
+    margin-bottom: 20px;
+}
+
+.level p {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.level button {
+    border-radius: 5px;
+    font-size: small;
+    padding: 5px 10px;
+}
+
+
+/* Modal */
+dialog {
+    border: none;
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+dialog h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Style for each membership level */
+.level-gold {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.level-silver {
+    background-color: #C0C0C0;
+    color: #000;
+}
+
+.level-bronze {
+    background-color: #d6b98c;
+    color: black;
+}
+
+.level-np {
+    background-color: #fff1f1;
+    color: #000;
+}
+
+/* Close button styling */
+.close-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #8B0000;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Style for benefits list */
+#modalBenefits {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px; /* Indentation for bullet points */
+}
+
+#modalBenefits li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+/* Base styles */
+.form-section, .membership-levels-section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* Transition & Animation*/
+/* Base styles for membership levels */
+.levels .level {
+    opacity: 0; /* Start with full transparency */
+    transform: scale(0.95); /* Start slightly smaller */
+    animation: fadeInScale 0.8s ease-out forwards; /* Trigger animation */
+}
+
+/* Individual delays for each card to create a staggered effect */
+.levels .level:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.levels .level:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.levels .level:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.levels .level:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+
+/* Animation definition */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Larger view styles */
+@media screen and (min-width: 768px) {
+    main {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    section {
+        display: flex;
+        gap: 5vw;
+    }
+}
