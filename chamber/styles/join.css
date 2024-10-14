@@ -4,6 +4,21 @@ body {
     box-sizing: border-box;
 }
 
+/* Nav */
+ul.menu-links li a {
+    color: #310000;
+}
+
+ul.menu-links {
+    background-color: #d6b98c;
+
+}
+
+ul.menu-links a:hover {
+    color: rgb(90, 0, 143);
+}
+
+
 main {
     font-family: "Montserrat", sans-serif;
     margin: 10px;
