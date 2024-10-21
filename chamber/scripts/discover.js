@@ -97,10 +97,10 @@ function renderEvents(data) {
 }
 
 // Load and render events
-fetchDataAndRender("../../chamber/data/discover-page/events.json", renderEvents);
+fetchDataAndRender("data/discover-page/events.json", renderEvents);
 
 // Load and render topics
-fetchDataAndRender("../../chamber/data/discover-page/topics.json", renderTopics);
+fetchDataAndRender("data/discover-page/topics.json", renderTopics);
 
-// Load and render headlines
-fetchDataAndRender("../../chamber/data/discover-page/headlines.json", renderHeadlines);
+// // Load and render headlines
+fetchDataAndRender("data/discover-page/headlines.json", renderHeadlines);
