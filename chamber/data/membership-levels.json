@@ -1,5 +1,5 @@
 {
-"np": {
+    "np": {
       "title": "Non Profit Membership Benefits",
       "benefits": [
         "Access to non-profit events",
@@ -32,4 +32,4 @@
         "Spotlight advertising on the home page"
       ]
     }
-  }
+}

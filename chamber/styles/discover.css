@@ -1,0 +1,196 @@
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeaea;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+main h4 {
+    padding-bottom: 20px;
+}
+
+.event-card, .topics-card {
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 15px 20px;
+}
+
+main h6 {
+    padding-bottom: 15px;
+}
+
+main h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+/* Visitor Message */
+.visitor-message {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #252825;
+    padding: 20px; /* Add padding for breathing space */
+    height: 5vh; /* Ensure it takes up full viewport height */
+}
+
+.visitor-message p {
+    position: relative;
+    font-size: .8rem; /* Increased font size for more impact */
+    color: #f0f0f0; /* Lighter color for more contrast */
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+    margin: 0; /* Remove margin to fully center */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.visitor-message p::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 3px solid #01fe87; /* Increase border thickness */
+    overflow: hidden;
+    animation: animate 6s cubic-bezier(0.65, 0, 0.35, 1) infinite; /* Smoother animation */
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+/* Optional: Add subtle background animation */
+.visitor-message {
+    background: linear-gradient(135deg, #252825, #383d52, #252825);
+    background-size: 400% 400%;
+    animation: backgroundAnimate 10s ease infinite;
+}
+
+@keyframes backgroundAnimate {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Main */
+.events p {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.event-card .environment {
+    padding-top: 70px;        
+}
+
+.topics-card p {
+    padding-top: 15px;
+    padding-bottom: 100px;
+
+}
+
+.event-card, .topics-card {
+    max-width: 300px;
+    height: 300px;
+
+}
+
+.main-content img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 15px;
+
+}
+
+.headline {
+    background-color: white;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #bdbdbd;
+    /* max-width: 500px; */
+}
+
+
+.main-content .subject {
+    border: 1px solid #a30000;
+    color: #a30000;
+    display: inline;
+    padding: 5px;
+}
+
+
+
+.headline p {
+    padding-left: 5px;
+    
+}
+
+.headline h3 {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+
+main {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    /* width: 400px; */
+}
+
+.sidebar .events, .sidebar .topics {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    /* align-items: center;
+    justify-content: center; */
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+/* Target the first event-item to occupy the first block */
+.events h4, .topics h4 {
+    grid-column: 1 / -1; /* Span across all columns */
+    grid-row: 1; /* Stay in the first row */
+
+}
+
+@media only screen and (min-width: 38rem) {
+    main {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .headline {
+        position: relative; /* Set position to relative for the container */
+        overflow: hidden; /* Hide overflow to contain zooming image */
+        transition: transform 0.2s ease; /* Smooth transition for the headline */
+    }
+    
+    .headline:hover {
+        background-color: #f9f9f9; /* Change background on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+        transform: translateY(-5px); /* Slide up effect */
+    }
+    
+    .headline img {
+        transition: transform 0.2s ease; /* Smooth transition for the image */
+        width: 100%; /* Ensure the image takes full width of the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .headline:hover img {
+        transform: scale(1.1); /* Zoom in effect for the image */
+    }
+
+    
+}

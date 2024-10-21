@@ -1,0 +1,42 @@
+[
+        {
+          "title": "Technology",
+          "description": "Information and news for businesses about the latest advances in Technology",
+          "cta": "Learn More"
+        },
+        {
+          "title": "Workforce",
+          "description": "Information on how to work in a team to drive management in the Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+          "cta": "Learn More"
+        },
+        {
+          "title": "Supply Chain",
+          "description": "News in supplying for businesses about the latest advances in Technology",
+          "cta": "Learn More"
+        },
+        {
+          "title": "Sustainability",
+          "description": "Insights into how businesses can adopt more sustainable practices to help the environment",
+          "cta": "Learn More"
+        },
+        {
+          "title": "Leadership",
+          "description": "Guidance on developing strong leadership skills to drive business success",
+          "cta": "Learn More"
+        },
+        {
+          "title": "Finance",
+          "description": "Latest trends and information on business finance management and investment strategies",
+          "cta": "Learn More"
+        },
+        {
+          "title": "Marketing",
+          "description": "How to build effective marketing strategies and connect with your target audience",
+          "cta": "Learn More"
+        },
+        {
+          "title": "Innovation",
+          "description": "Updates on cutting-edge innovations reshaping industries and changing the business landscape",
+          "cta": "Learn More"
+        }
+]
