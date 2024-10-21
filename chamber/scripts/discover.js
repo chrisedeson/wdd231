@@ -52,7 +52,7 @@ function shuffleAndLimit(array, limit) {
 
 // Render headlines (limit to 3)
 function renderHeadlines(data) {
-    const shuffledData = shuffleAndLimit(data, 3); // Limit to 3 headlines
+    const shuffledData = shuffleAndLimit(data, 6); // Limit to 3 headlines
     shuffledData.forEach(headline => {
         headlineCard.innerHTML += `
             <div class="headline">
@@ -67,7 +67,7 @@ function renderHeadlines(data) {
 
 // Render topics (limit to 4)
 function renderTopics(data) {
-    const shuffledData = shuffleAndLimit(data, 4); // Limit to 4 topics
+    const shuffledData = shuffleAndLimit(data, 8); // Limit to 4 topics
     shuffledData.forEach(topic => {
         topicsCard.innerHTML += `
             <div class="topics-card">
@@ -81,7 +81,7 @@ function renderTopics(data) {
 
 // Render events (limit to 4)
 function renderEvents(data) {
-    const shuffledData = shuffleAndLimit(data, 4); // Limit to 4 events
+    const shuffledData = shuffleAndLimit(data, 8); // Limit to 4 events
     shuffledData.forEach(event => {
         eventCard.innerHTML += `
             <div class="event-card">
