@@ -69,7 +69,7 @@ main h3 {
     }
 }
 
-/* Optional: Add subtle background animation */
+/* Add subtle background animation */
 .visitor-message {
     background: linear-gradient(135deg, #252825, #383d52, #252825);
     background-size: 400% 400%;

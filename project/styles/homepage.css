@@ -1,0 +1,330 @@
+/* Visitor Message */
+.visitor-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    height: 5vh;
+    background: rgb(32, 32, 32);
+    background-size: 400% 400%;
+    animation: backgroundAnimate 10s ease infinite;
+}
+
+.visitor-message p {
+    position: relative;
+    font-size: .56rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.visitor-message p::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    border-right: 3px solid #01fe87;
+    overflow: hidden;
+    animation: animate 6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0; /* Start hidden */
+    }
+    70%, 90% {
+        width: 100%; /* Reveal fully */
+    }
+}
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    margin-bottom: 8vh;
+}
+
+.hero-section img {
+    width: 100%;
+    padding-top: 50vh;
+}
+
+.hero-section-first {
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    color: white;
+    max-width: 100%;
+}
+
+.hero-section-first h2 {
+    font-size: 3rem;
+}
+
+.hero-section-first p {
+    max-width: 70%;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #740808;
+    color: #FFBC99;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.cta-button:active {
+    background-color: #8B0000;
+}
+
+/* Ad Section */
+
+.ad-section h3 {
+    font-family: 'Plus Jakarta Sans', serif;
+    margin-left: 10px;
+    color: #333;
+    font-size: 1rem;
+}
+
+
+/* Wrapper for all cards */
+.card-wrapper {
+    font-family: 'Plus Jakarta Sans', serif;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card h2,
+.card p {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.card p {
+    color: #6b4949;
+}
+
+.card img {
+    width: 80%;
+    height: auto;
+    margin: 15px auto;
+}
+
+.car-details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Icons */
+.car-details i {
+    font-size: 25px;
+}
+
+.car-details p {
+    font-family: "Roboto Condensed", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #6b4949;
+}
+
+.car-details-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.car-details-bottom h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0; /* Remove default margin */
+}
+
+.car-details-bottom-span {
+    font-size: 0.9rem;
+    color: #6b4949;
+}
+
+.car-details-bottom a {
+    background-color: #740808;
+    color: #FFBC99;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.car-details-bottom a:hover {
+    background-color: #8B0000;
+}
+
+
+/* Features Section */
+.features-section {
+    position: relative; /* Positioning for the overlay */
+    background-image: url(../images/background/cars-multiply-bg.jpg);
+    background-repeat: repeat;
+    background-size: 200px;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid white;
+    border-top: 10px solid white;
+}
+
+/* Overlay for better text visibility */
+.features-section::before {
+    content: ""; /* Empty content for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Place behind the text */
+}
+
+/* Wrapper for columns */
+.columns-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    gap: 30px;
+    position: relative; /* Ensure columns are on top of the overlay */
+    z-index: 2; /* Bring columns above the overlay */
+    overflow: hidden; /* Prevent overflow during transformation */
+
+}
+
+/* Individual columns */
+.column {
+    padding: 20px;
+    border: none;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Spacing between columns when stacked */
+.column {
+    margin-bottom: 20px; /* Gap between stacked columns */
+}
+
+/* Icon styling */
+.column i {
+    font-size: 3rem;
+    color: #c77810;
+    margin-bottom: 10px;
+}
+
+/* Title text */
+.column p:first-of-type {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0;
+}
+
+/* Description text */
+.column p:last-of-type {
+    font-size: 1em;
+    color: #40e289; /* Description text color */
+    letter-spacing: 1px;
+    padding-top: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .columns-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        min-width: unset;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+/* Layout for larger screens */
+
+@media (min-width: 768px) {
+    .card-wrapper {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    }
+    
+}
+
+@media only screen and (min-width: 50rem) {
+    .hero-section {
+        margin-bottom: 5vh;
+    }
+
+    .hero-section img {
+        padding-top: 25vh;
+    }
+    
+    .hero-section-first {
+        top: 5%;
+        max-width: 100%;
+    }
+}
+
+/* Media Queries for adjusting hero image to align with hero text */
+@media only screen and (min-width: 38rem) {
+    .hero-section img {
+        padding-top: 25vh;
+    }
+
+    .column:hover {
+        transform: translateY(-5px);
+    }
+
+}
+
+@media only screen and (min-width: 70rem) {
+    .hero-section {
+        margin-bottom: 25vh;
+    }
+}
+

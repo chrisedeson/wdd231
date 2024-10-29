@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christopher Edeson">
+    <meta name="description" content="Get in touch with us for any questions, support, or collaboration opportunities. We're here to help and look forward to connecting with you!">
+    <title>Contact Us | NextRide</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="scripts/header.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon_io/apple-touch-icon.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+
+    <!-- Social Media tags -->
+    <meta property="og:title" content="Contact Us | NextRide">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chrisedeson.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="https://chrisedeson.github.io/wdd231/project/image/social-media-metatag-image.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="logo-section">
+                <img class="logo" src="images/logo/image-car-banner.jpg" alt="Website Logo" loading="lazy">
+                <h1>Next/Ride</h1>
+            </div>
+            <img class="user-profile-picture" src="images/dp/profile-picture-serious.jpg" alt="user-profile-picture" loading="lazy">
+        </div>
+        <div class="nav-buttons">
+            <button id="hamburgerButton"></button>
+        </div>
+    </header>
+    <nav id="nav-links-animation">
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contact Us</h2>
+        <section>
+            <div class="form-section">
+                <h3>Inquiry Form</h3>
+                <form method="GET" action="thankyou.html" class="contact-form">
+                    <label for="firstName"><span class="heading-label">First Name</span>
+                        <input type="text" name="firstName" id="firstName" autocomplete="given-name" required>
+                    </label>
+                    <label for="lastName"><span class="heading-label">Last Name</span>
+                        <input type="text" name="lastName" id="lastName" autocomplete="family-name" required>
+                    </label>
+                    <label for="email"><span class="heading-label">Email</span>
+                        <input type="email" name="email" id="email" placeholder="example@domain.com" autocomplete="email" required>
+                    </label>
+                    <label for="mobile"><span class="heading-label">Phone Number</span>
+                        <input type="tel" name="mobile" id="mobile" placeholder="+2348012345678" autocomplete="tel" required>
+                    </label>
+                    <label for="inquiry"><span class="heading-label">Inquiry Type</span>
+                        <select name="inquiry" id="inquiry" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="rental">Car Rental</option>
+                            <option value="purchase">Car Purchase</option>
+                            <option value="support">Support</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </label>
+                    <label for="message"><span class="heading-label">Message</span>
+                        <textarea id="message" name="message" placeholder="Provide details of your inquiry..." required></textarea>
+                    </label>
+                    <input type="submit" value="Submit Inquiry">
+                </form>
+            </div>
+    
+            <div class="rental-options">
+                <h3>Car Rental Options</h3>
+                <div class="package">
+                    <h4>Economy Car</h4>
+                    <p><strong>Price:</strong> ₦30/day</p>
+                    <p>A compact and fuel-efficient option for city driving.</p>
+                    <ul>
+                        <li>4 seats</li>
+                        <li>AC</li>
+                        <li>Unlimited mileage</li>
+                    </ul>
+                </div>
+                <div class="package">
+                    <h4>SUV</h4>
+                    <p><strong>Price:</strong> ₦50/day</p>
+                    <p>Perfect for families and adventure trips.</p>
+                    <ul>
+                        <li>5 seats</li>
+                        <li>AC</li>
+                        <li>All-wheel drive</li>
+                    </ul>
+                </div>
+                <div class="package">
+                    <h4>Luxury Sedan</h4>
+                    <p><strong>Price:</strong> ₦100/day</p>
+                    <p>Experience comfort and style on the road.</p>
+                    <ul>
+                        <li>5 seats</li>
+                        <li>Leather interior</li>
+                        <li>Navigation system</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-phone-hours">
+            <span class="phone">
+                +234 906 870 5107
+            </span>
+            <span class="hours">
+                10 am - midnight
+            </span>
+        </div>
+
+        <div class="links-wrapper">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a href="explore.html">Explore</a>
+            </div>
+            <div class="nav-link">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="social-media-icons-wrapper">
+            <a href="https://www.twitter.com" target="_blank" aria-label="Visit our Twitter page">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/christopher.edeson" target="_blank" aria-label="Visit our Facebook page">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.github.com/chrisedeson" target="_blank" aria-label="Visit our Github page">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christopher-edeson" target="_blank" aria-label="Visit our Linkedin page">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="copyright-wrapper">
+            <p>&copy; 2024 Christopher Edeson | WDD 230 Web Front-End Development I</p>
+            <p>All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

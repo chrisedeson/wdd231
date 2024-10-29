@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "name": "Tesla.jpgel S",
+    "type": "Electric",
+    "img": "../project/images/cars/Jeep-Wrangler-2021.png",
+    "fuel": "100 kWh",
+    "transmission": "Automatic",
+    "seats": 5,
+    "price": "85.00",
+    "description": "Luxury electric sedan with long range and advanced technology."
+  },
+  {
+    "id": 2,
+    "name": "Ford Mustang",
+    "type": "Convertible",
+    "img": "../project/images/cars/tesla.jpg",
+    "fuel": "60 L",
+    "transmission": "Manual",
+    "seats": 4,
+    "price": "110.00",
+    "description": "Classic American convertible with a powerful V8 engine."
+  },
+  {
+    "id": 3,
+    "name": "Toyota Highlander",
+    "type": "SUV",
+    "img": "../project/images/cars/product_hyundai_veloster_2016.png",
+    "fuel": "75 L",
+    "transmission": "Automatic",
+    "seats": 7,
+    "price": "70.00",
+    "description": "Spacious SUV with three-row seating and great comfort for families."
+  },
+  {
+    "id": 4,
+    "name": "Honda Civic",
+    "type": "Sedan",
+    "img": "../project/images/cars/Jaguar-XR-2020.png",
+    "fuel": "47 L",
+    "transmission": "Automatic",
+    "seats": 5,
+    "price": "45.00",
+    "description": "Reliable sedan with excellent fuel efficiency and compact design."
+  },
+  {
+    "id": 5,
+    "name": "Chevrolet Camaro",
+    "type": "Coupe",
+    "img": "../project/images/cars/Honda-Civic.png",
+    "fuel": "72 L",
+    "transmission": "Manual",
+    "seats": 4,
+    "price": "105.00",
+    "description": "Stylish coupe known for its speed and performance on the road."
+  },
+  {
+    "id": 6,
+    "name": "Land Rover Discovery",
+    "type": "SUV",
+    "img": "../project/images/cars/tesla.jpg",
+    "fuel": "90 L",
+    "transmission": "Automatic",
+    "seats": 7,
+    "price": "95.00",
+    "description": "Rugged SUV designed for both urban and off-road adventures."
+  },
+  {
+    "id": 7,
+    "name": "Mazda MX-5",
+    "type": "Convertible",
+    "img": "../project/images/cars/Jeep-Wrangler-2021.png",
+    "fuel": "45 L",
+    "transmission": "Manual",
+    "seats": 2,
+    "price": "60.00",
+    "description": "Lightweight convertible known for its agility and responsive handling."
+  },
+  {
+    "id": 8,
+    "name": "BMW 3 Series",
+    "type": "Sedan",
+    "img": "../project/images/cars/tesla.jpg",
+    "fuel": "55 L",
+    "transmission": "Automatic",
+    "seats": 5,
+    "price": "75.00",
+    "description": "Premium sedan with sporty handling and luxury features."
+  },
+  {
+    "id": 9,
+    "name": "Jeep Wrangler",
+    "type": "SUV",
+    "img": "../project/images/cars/Jaguar-XR-2020.png",
+    "fuel": "70 L",
+    "transmission": "Manual",
+    "seats": 5,
+    "price": "90.00",
+    "description": "Iconic off-roader with removable doors and roof for adventure."
+  },
+  {
+    "id": 10,
+    "name": "Audi Q7",
+    "type": "SUV",
+    "img": "../project/images/cars/product_hyundai_veloster_2016.png",
+    "fuel": "85 L",
+    "transmission": "Automatic",
+    "seats": 7,
+    "price": "95.00",
+    "description": "Luxurious SUV offering spaciousness, comfort, and high-end technology."
+  },
+  {
+    "id": 11,
+    "name": "Ferrari F8",
+    "type": "Sport",
+    "img": "../project/images/cars/Honda-Civic.png",
+    "fuel": "78 L",
+    "transmission": "Automatic",
+    "seats": 2,
+    "price": "150.00",
+    "description": "Top-tier sports car with incredible speed and Italian craftsmanship."
+  },
+  {
+    "id": 12,
+    "name": "Mercedes-Benz E-Class",
+    "type": "Luxury",
+    "img": "../project/images/cars/tesla.jpg",
+    "fuel": "65 L",
+    "transmission": "Automatic",
+    "seats": 5,
+    "price": "85.00",
+    "description": "Refined luxury sedan with advanced features and smooth performance."
+  },
+  {
+    "id": 13,
+    "name": "Volkswagen Golf",
+    "type": "Hatchback",
+    "img": "../project/images/cars/Jeep-Wrangler-2021.png",
+    "fuel": "50 L",
+    "transmission": "Manual",
+    "seats": 5,
+    "price": "40.00",
+    "description": "Compact hatchback offering practicality and efficiency."
+  },
+  {
+    "id": 14,
+    "name": "Porsche 911",
+    "type": "Sport",
+    "img": "../project/images/cars/Jaguar-XR-2020.png",
+    "fuel": "64 L",
+    "transmission": "Automatic",
+    "seats": 4,
+    "price": "130.00",
+    "description": "Legendary sports car with outstanding handling and power."
+  },
+  {
+    "id": 15,
+    "name": "Toyota Prius",
+    "type": "Hybrid",
+    "img": "../project/images/cars/Jeep-Wrangler-2021.png",
+    "fuel": "43 L",
+    "transmission": "Automatic",
+    "seats": 5,
+    "price": "45.00",
+    "description": "Eco-friendly hybrid car with impressive fuel economy."
+  },
+  {
+    "id": 16,
+    "name": "Chevrolet Tahoe",
+    "type": "SUV",
+    "img": "../project/images/cars/tesla.jpg",
+    "fuel": "90 L",
+    "transmission": "Automatic",
+    "seats": 8,
+    "price": "85.00",
+    "description": "Large SUV with ample space and towing capabilities."
+  },
+  {
+    "id": 17,
+    "name": "Dodge Challenger",
+    "type": "Muscle",
+    "img": "../project/images/cars/product_hyundai_veloster_2016.png",
+    "fuel": "80 L",
+    "transmission": "Manual",
+    "seats": 5,
+    "price": "75.00",
+    "description": "Classic muscle car with a powerful engine and aggressive styling."
+  },
+  {
+    "id": 18,
+    "name": "Hyundai Sonata",
+    "type": "Sedan",
+    "img": "../project/images/cars/tesla.jpg",
+    "fuel": "60 L",
+    "transmission": "Automatic",
+    "seats": 5,
+    "price": "50.00",
+    "description": "Comfortable midsize sedan with modern features and design."
+  },
+  {
+    "id": 19,
+    "name": "Porsche 911",
+    "type": "Sport",
+    "img": "../project/images/cars/Jeep-Wrangler-2021.png",
+    "fuel": "64 L",
+    "transmission": "Automatic",
+    "seats": 4,
+    "price": "130.00",
+    "description": "Legendary sports car with outstanding handling and power."
+  },
+  {
+    "id": 20,
+    "name": "Toyota Prius",
+    "type": "Hybrid",
+    "img": "../project/images/cars/product_hyundai_veloster_2016.png",
+    "fuel": "43 L",
+    "transmission": "Automatic",
+    "seats": 5,
+    "price": "45.00",
+    "description": "Eco-friendly hybrid car with impressive fuel economy."
+  }
+]

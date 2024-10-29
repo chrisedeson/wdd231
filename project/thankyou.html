@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christopher Edeson">
+    <meta name="description" content="Contact NextRide for inquiries, support, or partnerships. We're here to assist you with car rentals and sales.">
+    <title>Thank You | NextRide</title>
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="scripts/header.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon_io/apple-touch-icon.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+
+    <!-- Social Media tags -->
+    <meta property="og:title" content="Contact Us | NextRide">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chrisedeson.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="https://chrisedeson.github.io/wdd231/project/image/social-media-metatag-image.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="logo-section">
+                <img class="logo" src="images/logo/image-car-banner.jpg" alt="Website Logo" loading="lazy">
+                <h1>Next/Ride</h1>
+            </div>
+            <img class="user-profile-picture" src="images/dp/profile-picture-serious.jpg" alt="user-profile-picture" loading="lazy">
+        </div>
+        <div class="nav-buttons">
+            <button id="hamburgerButton"></button>
+        </div>
+    </header>
+    <nav id="nav-links-animation">
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Thank You for Patronizing Us!</h2>
+        <p>We appreciate you taking the time to fill out the form. Below is the information you submitted:</p>
+        
+        <section class="submitted-info">
+            <h3>Submitted Information</h3>
+            <p><strong>First Name: </strong> <span id="firstName"></span></p>
+            <p><strong>Last Name: </strong> <span id="lastName"></span></p>
+            <p><strong>Email: </strong> <span id="email"></span></p>
+            <p><strong>Mobile Number: </strong> <span id="mobile"></span></p>
+            <p><strong>Inquiry: </strong><span id="inquiry"></span></p>
+            <p><strong>Submission Date & Time: </strong> <span id="timestamp"></span></p>
+        </section>
+        
+        <a href="index.html">Back to Home</a>
+    </main>
+
+    <footer>
+        <div class="footer-phone-hours">
+            <span class="phone">
+                +234 906 870 5107
+            </span>
+            <span class="hours">
+                10 am - midnight
+            </span>
+        </div>
+
+        <div class="links-wrapper">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a href="explore.html">Explore</a>
+            </div>
+            <div class="nav-link">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="social-media-icons-wrapper">
+            <a href="https://www.twitter.com" target="_blank" aria-label="Visit our Twitter page">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/christopher.edeson" target="_blank" aria-label="Visit our Facebook page">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.github.com/chrisedeson" target="_blank" aria-label="Visit our Github page">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christopher-edeson" target="_blank" aria-label="Visit our Linkedin page">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="copyright-wrapper">
+            <p>&copy; 2024 Christopher Edeson | WDD 230 Web Front-End Development I</p>
+            <p>All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

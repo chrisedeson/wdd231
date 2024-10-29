@@ -1,0 +1,128 @@
+/* Font from https://www.1001fonts.com/ */
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('../fonts/ethnocentric/ethnocentric.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 10px;
+}
+
+header > .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 70px;
+}
+
+header .logo-section {
+    display: flex;
+    gap: 10px;
+}
+
+header .banner h1 {
+    font-family: "Ethnocentric";
+    color: #f53b0c;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+header img {
+    width: 25px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* Nav bars */
+.nav-buttons {
+    display: flex;
+}
+
+#hamburgerButton::before {
+    content: "=";
+    font-weight: 500;
+    
+}
+
+#hamburgerButton, .nav-buttons #themes {
+    font-size: 2rem;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: .25rem 2vw;
+    background-color: #555B6E;
+    margin-top: 10px;
+}
+
+ul.menu-links li a {
+    display: block;
+    padding: .75rem 3vw;
+    color: white;
+    text-decoration: none;
+}
+
+ul.menu-links {
+    list-style-type: none;
+    text-align: center;
+}
+
+.active {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#hamburgerButton.open::before {
+    content: "x";
+    color: #ff0000;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    background-color: #555B6E;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+
+@media only screen and (min-width: 38rem) {
+    #hamburgerButton {
+        display: none;
+    }
+
+    ul.menu-links, ul.menu-links.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menu-links a:hover {
+        color: orange;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+        margin-top: 10px;
+    }
+
+}

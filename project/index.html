@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christopher Edeson">
+    <meta name="description" content="Find the perfect car for your needs, whether you're looking to rent for a short trip or buy for the long haul. Browse a wide selection of vehicles for sale and rent at competitive prices.">
+    <title>NextRide – Your Ride, Your Way</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="scripts/header.js" defer></script>
+    <script src="scripts/homepage.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon_io/apple-touch-icon.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+
+    <!-- Social Media tags -->
+    <meta property="og:title" content="NextRide – Your Ride, Your Way">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chrisedeson.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="https://chrisedeson.github.io/wdd231/project/image/social-media-metatag-image.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="logo-section">
+                <img class="logo" src="images/logo/image-car-banner.jpg" alt="Website Logo" loading="lazy">
+                <h1>Next/Ride</h1>
+            </div>
+            <img class="user-profile-picture" src="images/dp/profile-picture-serious.jpg" alt="user-profile-picture" loading="lazy">
+        </div>
+        <div class="nav-buttons">
+            <button id="hamburgerButton"></button>
+        </div>
+    </header>
+    <nav id="nav-links-animation">
+        <ul class="menu-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="visitor-message">
+        <p id="visitorMessage"></p>
+    </div>
+
+    <main>
+        <section class="hero-section">
+            <img src="images/background/hero-image.jpg" alt="Modern sport car sketch line silhouette blue and green light isolated on black background in side view" loading="lazy">
+            <div class="hero-section-first">
+                <h2>Rent or Buy Your Dream Car Today</h2>
+                <p>We provide the best car options, with premium customer services at a competitive price</p>
+                <a href="explore.html" class="cta-button" aria-label="Browse Cars">Browse Cars</a>
+            </div>
+        </section>
+        <section class="ad-section">
+            <h3>Popular Cars</h3>
+            <div class="card-wrapper">
+                <div class="card">
+                    <h2>Koenigsegg</h2>
+                    <p>Sport</p>
+                    <img src="images/cars/car-one.png" alt="Koenigsegg" loading="lazy">
+                    <div class="car-details">
+                        <p><i class="fa-solid fa-gas-pump"></i>90 L</p>
+                        <p><i class="fa-solid fa-gear"></i>Automatic</p>
+                        <p><i class="fa-solid fa-user-group"></i>4 Persons</p>
+                    </div>
+                    <div class="car-details-bottom">
+                        <h3>₦99.00 /<span class="car-details-bottom-span">day</span></h3>
+                        <a href="contact.html" class="cta-button" aria-label="Rent Now">Rent Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Hyundai Veloster 2016</h2>
+                    <p>Sport</p>
+                    <img src="images/cars/product_hyundai_veloster_2016.png" alt="Hyundai Veloster 2016" loading="lazy">
+                    <div class="car-details">
+                        <p><i class="fa-solid fa-gas-pump"></i>85 L</p>
+                        <p><i class="fa-solid fa-gear"></i>Automatic</p>
+                        <p><i class="fa-solid fa-user-group"></i>4 Persons</p>
+                    </div>
+                    <div class="car-details-bottom">
+                        <h3>₦129.99 /<span class="car-details-bottom-span">day</span></h3>
+                        <a href="contact.html" class="cta-button" aria-label="Rent Now">Rent Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Jeep Wrangler 2021</h2>
+                    <p>Sport</p>
+                    <img src="images/cars/Jeep-Wrangler-2021.png" alt="Jeep Wrangler 2021" loading="lazy">
+                    <div class="car-details">
+                        <p><i class="fa-solid fa-gas-pump"></i>120 L</p>
+                        <p><i class="fa-solid fa-gear"></i>Manual</p>
+                        <p><i class="fa-solid fa-user-group"></i>5 Persons</p>
+                    </div>
+                    <div class="car-details-bottom">
+                        <h3>₦2,499.99</h3>
+                        <a href="contact.html" class="cta-button" aria-label="Buy Now">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features-section">
+            <h2 hidden>Bla Bla Bla. . . Yep, I am lazy😩</h2>
+            <div class="columns-wrapper">
+                <div class="column">
+                    <i class="fa-solid fa-car"></i>
+                    <p>Wide Selection of Vehicles!</p>
+                    <p>Choose from a variety of cars, trucks, and SUVs to suit your needs.</p>
+                </div>
+                <div class="column">
+                    <i class="fas fa fa-solid fa-key"></i>
+                    <p>Easy Online Booking!</p>
+                    <p>Reserve your vehicle in just a few clicks—fast and hassle-free.</p>
+                </div>
+                <div class="column">
+                    <i class="fas fa fa-solid fa-dollar-sign"></i>
+                    <p>Competitive Pricing!</p>
+                    <p>Get the best deals on car rentals and purchases, tailored to your budget.</p>
+                </div>
+            </div>
+        </section>
+        <section class="map-section">
+            <h2 hidden>Bla Bla Bla. . . Yep, I am lazy😩</h2>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-phone-hours">
+            <span class="phone">
+                +234 906 870 5107
+            </span>
+            <span class="hours">
+                10 am - midnight
+            </span>
+        </div>
+
+        <div class="links-wrapper">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a href="explore.html">Explore</a>
+            </div>
+            <div class="nav-link">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="social-media-icons-wrapper">
+            <a href="https://www.twitter.com" target="_blank" aria-label="Visit our Twitter page">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/christopher.edeson" target="_blank" aria-label="Visit our Facebook page">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.github.com/chrisedeson" target="_blank" aria-label="Visit our Github page">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christopher-edeson" target="_blank" aria-label="Visit our Linkedin page">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="copyright-wrapper">
+            <p>&copy; 2024 Christopher Edeson | WDD 230 Web Front-End Development I</p>
+            <p>All rights reserved</p>
+        </div>
+    
+    </footer>
+</body>
+</html>
