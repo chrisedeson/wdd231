@@ -1,0 +1,28 @@
+NextRide Project Attributions
+
+1. Google Maps API
+This website uses the Google Maps API to display interactive maps and locations. In accordance with Google’s Attribution Guidelines, please refer to the following:
+
+Map Data: © Google
+Google Maps Attribution Guide: https://www.google.com/permissions/geoguidelines/attr-guide/
+
+2. Fonts
+    - Google Fonts
+        This project uses fonts provided by Google Fonts. Google Fonts are open-source and available for personal and commercial use with attribution.
+            Google Fonts Website: https://fonts.google.com/
+
+    - 1001Fonts
+        This project may include fonts sourced from 1001Fonts. Fonts from 1001Fonts are used according to individual licenses specified on their website, and proper attribution is provided as required.
+
+            1001Fonts Website: https://www.1001fonts.com/
+
+3. Icons and Assets
+This project uses Font Awesome icons for displaying car details and UI elements, including icons for fuel, transmission, seats, and social media links.
+
+Font Awesome: Icons provided by Font Awesome are licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+Font Awesome Website: https://fontawesome.com/
+
+4. Images
+Images used in this project are from either:
+
+Licensed Sources or placeholder images included in project-specific development environments.
