@@ -330,3 +330,19 @@
     }
 }
 
+
+ /* Media Quaries for mobile, adjusting the hero section */
+@media only screen and (max-width: 38rem) {
+    .hero-section-first h2 {
+        padding-top: 50px;
+        font-size: 3rem;
+    }
+    
+    .hero-section-first p {
+        padding-top: 25px; 
+        padding-bottom: 15px;
+        max-width: 70%;
+    }
+    
+}
+
