@@ -66,10 +66,12 @@
 }
 
 .hero-section-first h2 {
+    padding-top: 20px;
     font-size: 3rem;
 }
 
 .hero-section-first p {
+    padding-top: 15px; 
     max-width: 70%;
 }
 
